@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   ipfs:
-    image: surfdb/ceramic-js-daemon:latest
+    image: surfdb/go-ipfs-daemon:latest
     ports:
       - "5001:5001"
       - "8011:8011"
