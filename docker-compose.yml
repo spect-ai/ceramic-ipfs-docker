@@ -10,12 +10,12 @@ services:
       - ./ipfs:/data/ipfs
     environment:
       - IPFS_ENABLE_S3=true
-      - IPFS_S3_REGION=sgp1
-      - IPFS_S3_BUCKET_NAME=ceramictest/ceramic/
-      - IPFS_S3_ROOT_DIRECTORY=test
-      - IPFS_S3_ACCESS_KEY_ID=DO00NC63XP2XEUFY4Q7D
-      - IPFS_S3_SECRET_ACCESS_KEY=u1WELk71jNSgXKoPqkk8M6ApNP2w7zuk9qa3bKg/DLg
-      - IPFS_S3_REGION_ENDPOINT=sgp1.digitaloceanspaces.com
+      - IPFS_S3_REGION=${IPFS_S3_REGION}
+      - IPFS_S3_BUCKET_NAME=${IPFS_S3_BUCKET_NAME}
+      - IPFS_S3_ROOT_DIRECTORY=surf
+      - IPFS_S3_ACCESS_KEY_ID=${IPFS_S3_ACCESS_KEY_ID}
+      - IPFS_S3_SECRET_ACCESS_KEY=${IPFS_S3_SECRET_ACCESS_KEY}
+      - IPFS_S3_REGION_ENDPOINT=${IPFS_S3_REGION_ENDPOINT}
       - IPFS_S3_Key_TRANSFORM=next-to-last/2
 
   ceramic:
