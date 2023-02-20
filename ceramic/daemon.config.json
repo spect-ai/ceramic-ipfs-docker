@@ -3,7 +3,8 @@
     "ethereum-rpc-url": "https://gnosischain-rpc.gateway.pokt.network/"
   },
   "http-api": {
-    "cors-allowed-origins": [".*"]
+    "cors-allowed-origins": [".*"],
+    "admin-dids": ["did:key:z6MkvhxsgXoVNa69zEGMMZtam2YAYJsyzzETe4wJdb69hMV9"]
   },
   "ipfs": {
     "mode": "remote",
