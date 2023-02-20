@@ -3,7 +3,10 @@
     "ethereum-rpc-url": "https://gnosischain-rpc.gateway.pokt.network/"
   },
   "http-api": {
-    "cors-allowed-origins": ["https://*.spect.network"],
+    "cors-allowed-origins": [
+      "https://dev.spect.network",
+      "https://circles.spect.network/"
+    ],
     "admin-dids": ["did:key:z6MkvhxsgXoVNa69zEGMMZtam2YAYJsyzzETe4wJdb69hMV9"]
   },
   "ipfs": {
