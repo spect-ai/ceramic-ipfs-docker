@@ -1,12 +1,22 @@
 version: "3.3"
 services:
   ipfs:
-    image: ceramicnetwork/go-ipfs-daemon:latest
+    image: surfdb/go-ipfs-daemon:latest
     ports:
       - "5001:5001"
       - "8011:8011"
+      - "8080:8080"
     volumes:
       - ./ipfs:/data/ipfs
+    environment:
+      - IPFS_ENABLE_S3=true
+      - IPFS_S3_REGION=${IPFS_S3_REGION}
+      - IPFS_S3_BUCKET_NAME=${IPFS_S3_BUCKET_NAME}
+      - IPFS_S3_ROOT_DIRECTORY=surf
+      - IPFS_S3_ACCESS_KEY_ID=${IPFS_S3_ACCESS_KEY_ID}
+      - IPFS_S3_SECRET_ACCESS_KEY=${IPFS_S3_SECRET_ACCESS_KEY}
+      - IPFS_S3_REGION_ENDPOINT=${IPFS_S3_REGION_ENDPOINT}
+      - IPFS_S3_Key_TRANSFORM=next-to-last/2
 
   ceramic:
     image: ceramicnetwork/js-ceramic:latest
@@ -18,7 +28,6 @@ services:
       - ipfs
     environment:
       - NODE_ENV=production
-      - CERAMIC_ENABLE_EXPERIMENTAL_COMPOSE_DB=true
 
 volumes:
   ipfs:
