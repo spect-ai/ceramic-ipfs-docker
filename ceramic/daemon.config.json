@@ -5,7 +5,7 @@
   "http-api": {
     "cors-allowed-origins": [
       "https://dev.spect.network",
-      "https://circles.spect.network/"
+      "https://circles.spect.network"
     ],
     "admin-dids": ["did:key:z6MkvhxsgXoVNa69zEGMMZtam2YAYJsyzzETe4wJdb69hMV9"]
   },
