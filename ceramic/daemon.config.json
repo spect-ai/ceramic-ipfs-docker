@@ -1,6 +1,6 @@
 {
   "anchor": {
-    "ethereum-rpc-url": "https://gnosischain-rpc.gateway.pokt.network/"
+    "ethereum-rpc-url": "https://eth-mainnet.g.alchemy.com/v2/gRV8E8H-ok8nzUOAdR4YY_bCM5BCoqy5"
   },
   "http-api": {
     "cors-allowed-origins": [
@@ -22,7 +22,7 @@
     "metrics-port": 9090
   },
   "network": {
-    "name": "testnet-clay"
+    "name": "mainnet"
   },
   "node": {},
   "state-store": {
