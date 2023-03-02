@@ -1,6 +1,7 @@
 {
   "anchor": {
-    "ethereum-rpc-url": "https://eth-mainnet.g.alchemy.com/v2/gRV8E8H-ok8nzUOAdR4YY_bCM5BCoqy5"
+    "ethereum-rpc-url": "https://eth-mainnet.g.alchemy.com/v2/gRV8E8H-ok8nzUOAdR4YY_bCM5BCoqy5",
+    "auth-method": "did"
   },
   "http-api": {
     "cors-allowed-origins": [
@@ -24,7 +25,9 @@
   "network": {
     "name": "mainnet"
   },
-  "node": {},
+  "node": {
+    "privateSeedUrl": "71d61276e6cf20581e814921ead26133358d8503c2400a8705fb09d447cf7207"
+  },
   "state-store": {
     "mode": "fs",
     "local-directory": "/root/.ceramic/statestore/"
