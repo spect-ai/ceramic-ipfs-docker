@@ -26,7 +26,7 @@
     "name": "mainnet"
   },
   "node": {
-    "privateSeedUrl": "71d61276e6cf20581e814921ead26133358d8503c2400a8705fb09d447cf7207"
+    "privateSeedUrl": "inplace:ed25519#71d61276e6cf20581e814921ead26133358d8503c2400a8705fb09d447cf7207"
   },
   "state-store": {
     "mode": "fs",
