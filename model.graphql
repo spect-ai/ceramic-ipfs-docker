@@ -1,9 +1,5 @@
 type SpectForm
-  @createModel(
-    accountRelation: LIST
-    description: "Spect form data"
-    version: "1"
-  ) {
+  @createModel(accountRelation: LIST, description: "Spect form data") {
   formId: String! @string(minLength: 36, maxLength: 36)
   author: DID! @documentAccount
   data: String! @string(minLength: 1, maxLength: 10000)
