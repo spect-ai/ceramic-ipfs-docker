@@ -6,4 +6,5 @@ type SpectForm
   origin: String! @string(minLength: 1, maxLength: 50)
   createdAt: DateTime!
   link: String @string(minLength: 1, maxLength: 100)
+  version: String @string(minLength: 1, maxLength: 50)
 }
