@@ -11,7 +11,7 @@
   },
   "ipfs": {
     "mode": "remote",
-    "host": "http://ipfs:5001"
+    "host": "http://localhost:5001"
   },
   "logger": {
     "log-level": 2,
