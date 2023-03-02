@@ -8,6 +8,17 @@ services:
     volumes:
       - ./ipfs:/data/ipfs
 
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5432:5432"
+    volumes:
+      - db:/var/lib/postgresql/data
+
   ceramic:
     image: ceramicnetwork/js-ceramic:latest
     ports:
@@ -16,6 +27,7 @@ services:
       - ./ceramic:/root/.ceramic
     depends_on:
       - ipfs
+      - db
     environment:
       - NODE_ENV=production
       - CERAMIC_ENABLE_EXPERIMENTAL_COMPOSE_DB=true
@@ -23,3 +35,4 @@ services:
 volumes:
   ipfs:
   ceramic:
+  db:

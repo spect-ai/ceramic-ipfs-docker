@@ -30,7 +30,7 @@
     "local-directory": "/root/.ceramic/statestore/"
   },
   "indexing": {
-    "db": "postgresql://localhost:5432",
+    "db": "postgres://postgres:password@db:5432",
     "allow-queries-before-historical-sync": true,
     "models": []
   }
